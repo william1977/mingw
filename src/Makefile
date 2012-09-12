@@ -6,7 +6,7 @@ clean :
 	find . -name "*.o" | xargs rm
 	rm libsocket.a
 
-SOURCES := wrapper/socket.o 
+SOURCES := socket.o 
 
 libsocket : $(SOURCES)
 	ar rcs $@.a $(SOURCES)

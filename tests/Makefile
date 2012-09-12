@@ -7,7 +7,7 @@ clean :
 	find ../ -name "*.o" | xargs rm
 	rm socket_server_test 
 
-SOURCES := ../src/wrapper/socket.o 
+SOURCES := ../src/socket.o 
 
 socket_server_test : socket_server_test.o $(SOURCES)
 	g++ -o $@ $< $(SOURCES)
