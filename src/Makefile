@@ -1,4 +1,7 @@
 CPPFLAGS := -I ../include
+CC := i686-pc-mingw32-gcc
+CXX := i686-pc-mingw32-g++
+
 
 all : libsocket
 
