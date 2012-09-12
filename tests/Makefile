@@ -1,4 +1,4 @@
-CPPFLAGS := -I ../include
+CPPFLAGS := -I ../include -v
 CC := i686-pc-mingw32-gcc
 CXX := i686-pc-mingw32-g++
 
@@ -12,5 +12,5 @@ clean :
 SOURCES := ../src/socket.o 
 
 socket_server_test : socket_server_test.o $(SOURCES)
-	$(CXX) -o $@ $< $(SOURCES)
+	$(CXX) -v -o $@ $< $(SOURCES)
 

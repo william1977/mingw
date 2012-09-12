@@ -1,4 +1,4 @@
-CPPFLAGS := -I ../include
+CPPFLAGS := -I ../include -v
 CC := i686-pc-mingw32-gcc
 CXX := i686-pc-mingw32-g++
 
