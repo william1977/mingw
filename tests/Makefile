@@ -12,5 +12,5 @@ clean :
 SOURCES := ../src/socket.o 
 
 socket_server_test : socket_server_test.o $(SOURCES)
-	$(CXX) -static -v -o $@ $< $(SOURCES)
+	$(CXX) -static-libgcc -static-libstdc++ -v -o $@ $< $(SOURCES)
 
